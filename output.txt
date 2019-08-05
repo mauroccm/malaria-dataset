@@ -1,0 +1,81 @@
+mauromorais@debian-mauro:~/projects/dl-medical-imaging$ python train_model.py 
+Using TensorFlow backend.
+Found 19842 images belonging to 2 classes.
+Found 2204 images belonging to 2 classes.
+Found 5512 images belonging to 2 classes.
+WARNING: Logging before flag parsing goes to stderr.
+W0722 23:42:23.611629 140066616600000 deprecation_wrapper.py:119] From /home/mauromorais/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:74: The name tf.get_default_graph is deprecated. Please use tf.compat.v1.get_default_graph instead.
+
+W0722 23:42:23.856591 140066616600000 deprecation_wrapper.py:119] From /home/mauromorais/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:517: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0722 23:42:23.978646 140066616600000 deprecation_wrapper.py:119] From /home/mauromorais/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:174: The name tf.get_default_session is deprecated. Please use tf.compat.v1.get_default_session instead.
+
+W0722 23:42:23.978831 140066616600000 deprecation_wrapper.py:119] From /home/mauromorais/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:181: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+W0722 23:42:23.978986 140066616600000 deprecation_wrapper.py:119] From /home/mauromorais/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:186: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2019-07-22 23:42:24.007495: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2019-07-22 23:42:24.317526: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2394390000 Hz
+2019-07-22 23:42:24.318299: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55bf33b00d60 executing computations on platform Host. Devices:
+2019-07-22 23:42:24.318370: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-07-22 23:42:24.862959: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+W0722 23:42:24.895353 140066616600000 deprecation_wrapper.py:119] From /home/mauromorais/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:1834: The name tf.nn.fused_batch_norm is deprecated. Please use tf.compat.v1.nn.fused_batch_norm instead.
+
+W0722 23:42:25.130961 140066616600000 deprecation_wrapper.py:119] From /home/mauromorais/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:3976: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+W0722 23:42:28.245323 140066616600000 deprecation_wrapper.py:119] From /home/mauromorais/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py:3980: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+W0722 23:42:28.278577 140066616600000 deprecation_wrapper.py:119] From /home/mauromorais/.local/lib/python2.7/site-packages/keras/optimizers.py:790: The name tf.train.Optimizer is deprecated. Please use tf.compat.v1.train.Optimizer instead.
+
+W0722 23:42:28.284789 140066616600000 deprecation.py:323] From /home/mauromorais/.local/lib/python2.7/site-packages/tensorflow/python/ops/nn_impl.py:180: where (from tensorflow.python.ops.array_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.where in 2.0, which has the same broadcast rule as np.where
+Epoch 1/20
+620/620 [==============================] - 1458s 2s/step - loss: 0.9608 - acc: 0.8083 - val_loss: 0.6218 - val_acc: 0.9568
+Epoch 2/20
+620/620 [==============================] - 1405s 2s/step - loss: 0.5659 - acc: 0.9517 - val_loss: 0.4862 - val_acc: 0.9604
+Epoch 3/20
+620/620 [==============================] - 1376s 2s/step - loss: 0.4701 - acc: 0.9550 - val_loss: 0.4166 - val_acc: 0.9604
+Epoch 4/20
+620/620 [==============================] - 1378s 2s/step - loss: 0.4166 - acc: 0.9522 - val_loss: 0.3718 - val_acc: 0.9563
+Epoch 5/20
+620/620 [==============================] - 1376s 2s/step - loss: 0.3897 - acc: 0.9498 - val_loss: 0.3381 - val_acc: 0.9586
+Epoch 6/20
+620/620 [==============================] - 1377s 2s/step - loss: 0.3264 - acc: 0.9564 - val_loss: 0.2903 - val_acc: 0.9613
+Epoch 7/20
+620/620 [==============================] - 1376s 2s/step - loss: 0.3205 - acc: 0.9519 - val_loss: 0.2776 - val_acc: 0.9595
+Epoch 8/20
+620/620 [==============================] - 1378s 2s/step - loss: 0.2739 - acc: 0.9576 - val_loss: 0.2551 - val_acc: 0.9650
+Epoch 9/20
+620/620 [==============================] - 1377s 2s/step - loss: 0.2476 - acc: 0.9592 - val_loss: 0.2290 - val_acc: 0.9659
+Epoch 10/20
+620/620 [==============================] - 1376s 2s/step - loss: 0.2304 - acc: 0.9602 - val_loss: 0.2158 - val_acc: 0.9641
+Epoch 11/20
+620/620 [==============================] - 1379s 2s/step - loss: 0.2198 - acc: 0.9609 - val_loss: 0.2029 - val_acc: 0.9627
+Epoch 12/20
+620/620 [==============================] - 1377s 2s/step - loss: 0.2365 - acc: 0.9531 - val_loss: 0.2030 - val_acc: 0.9632
+Epoch 13/20
+620/620 [==============================] - 1377s 2s/step - loss: 0.2537 - acc: 0.9541 - val_loss: 0.2288 - val_acc: 0.9567
+Epoch 14/20
+620/620 [==============================] - 1376s 2s/step - loss: 0.2152 - acc: 0.9626 - val_loss: 0.2112 - val_acc: 0.9632
+Epoch 15/20
+620/620 [==============================] - 1376s 2s/step - loss: 0.2027 - acc: 0.9605 - val_loss: 0.2033 - val_acc: 0.9604
+Epoch 16/20
+620/620 [==============================] - 1377s 2s/step - loss: 0.1916 - acc: 0.9621 - val_loss: 0.1813 - val_acc: 0.9632
+Epoch 17/20
+620/620 [==============================] - 1377s 2s/step - loss: 0.2137 - acc: 0.9569 - val_loss: 0.1917 - val_acc: 0.9641
+Epoch 18/20
+620/620 [==============================] - 1380s 2s/step - loss: 0.1850 - acc: 0.9619 - val_loss: 0.1726 - val_acc: 0.9682
+Epoch 19/20
+620/620 [==============================] - 1376s 2s/step - loss: 0.1884 - acc: 0.9626 - val_loss: 0.1672 - val_acc: 0.9669
+Epoch 20/20
+620/620 [==============================] - 1376s 2s/step - loss: 0.1903 - acc: 0.9610 - val_loss: 0.1689 - val_acc: 0.9687
+[INFO] evaluating network...
+              precision    recall  f1-score   support
+
+ Parasitized       0.97      0.95      0.96      2756
+  Uninfected       0.95      0.98      0.96      2756
+
+   micro avg       0.96      0.96      0.96      5512
+   macro avg       0.96      0.96      0.96      5512
+weighted avg       0.96      0.96      0.96      5512
