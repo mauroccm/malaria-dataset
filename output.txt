@@ -76,6 +76,4 @@ Epoch 20/20
  Parasitized       0.97      0.95      0.96      2756
   Uninfected       0.95      0.98      0.96      2756
 
-   micro avg       0.96      0.96      0.96      5512
-   macro avg       0.96      0.96      0.96      5512
-weighted avg       0.96      0.96      0.96      5512
+
